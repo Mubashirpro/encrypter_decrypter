@@ -28,7 +28,7 @@ class ED:
     def encrypter(self,string):
         string = string.encode()
         enc = base64.b32encode(string)
-        print(red,f"\nEncrypted : {enc.decode()}")
+        print(cyan,f"\nEncrypted : {enc.decode()}")
     def decrypter(self,encrypted):
         decrypted = base64.b32decode(encrypted)
         print(lime,f"\nDecrypted : {decrypted.decode()}")
